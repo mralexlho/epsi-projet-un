@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-noire">
+  <a class="navbar-brand" routerLink="EPSI_SQUAD">By Les Tulipes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class=" nav-item dropdown" appDropdown>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Campus HEP<span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="description">Description</a></li>
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="partenaire">Partenaire Du Campus</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown" appDropdown>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Groupe EPSI<span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="enssemble">Ensemble des EPSI</a></li>
+        </ul>
+
+        <li class="nav-item dropdown" appDropdown>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Cursus<span class="caret"></span></a>
+
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="b3">B3</a></li>
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="i4">I4</a></li>
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="i5">I5</a></li>
+        </ul>
+
+      </li>
+
+        <li class="nav-item dropdown" appDropdown>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Alentours<span class="caret"></span></a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li routerLinkActive="active"><a class="dropdown-item" routerLink="posimagashop">Position / Restaurant / Shopping</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>

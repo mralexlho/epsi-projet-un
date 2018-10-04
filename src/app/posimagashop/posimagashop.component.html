@@ -1,0 +1,81 @@
+ <style type="text/css">
+ img 
+{
+    height: 50px;
+    width: 50px;
+}
+h1 
+{
+    text-align: center;
+}
+</style>
+        <div style="text-align:center">
+          <h2> <font face="URW Chancery L, cursive" size="+4" color="green">Alentours Du Campus<br>
+            <small> Venez admirer le coeur de la France</small></font></h2>
+        </div>
+
+        <div class="panel-group" id="accordion">
+          <div class="card">
+            <div class="pointerCursor" (click)="panelExpanded = !panelExpanded; panelExpanded2 = false; panelExpanded3 = false">
+              <h3 class="card-header">
+                  Position
+              </h3>
+                <div class="card-body" *ngIf="panelExpanded">
+                  <div id="map" style="width: 400px; height: 300px"></div> 
+                  <h1>Bienvenue sur le campus EPSI La Défense</h1>
+                  <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=20%20Bis%20Jardins%20Boieldieu%2C%2092071%20La%20D%C3%A9fense+(EPSI-LA%20D%C3%A9fense%20Coeur%20de%20France)&ie=UTF8&t=&z=16&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/en/custom-google-maps/">Create a custom Google Map</a> by <a href="https://www.mapsdirections.info/en/">Measure area on map</a></iframe></div><br />
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pointerCursor" (click)="panelExpanded2 = !panelExpanded2; panelExpanded = false; panelExpanded3 = false">
+              <h3 class="card-header">
+                  Restaurants
+              </h3>
+
+                <div class="card-body" *ngIf="panelExpanded2">
+                  <h4>Bienvenue au sein des richesses gastronomiques les plus diversifiées de France:</h4><br>
+                  <ul>
+                  <li><a>FIVE GUYS les quatre temps : </a><img src="assets/imageAlentour/five-guys-burgers-fries.jpg"></li><br>
+                  <li><a>Haut Restaurant Italien Vapiano : </a><img src="assets/imageAlentour/Vapiano.jpg"></li><br>
+                  <li><a>Haut Restaurant Mexicain Chipotle : </a><img src="assets/imageAlentour/chipotle.jpg"></li><br>
+                   <li><a>BigFernand Grande Maison du burger Français : </a><img src="assets/imageAlentour/Logo_Big_Fernand.jpg"></li><br>
+                   <li><a>La cantine Libanaise : </a><img src="assets/imageAlentour/LACANTINELIBANAISE.jpg"></li><br>
+                   <li><a>Restaurant Vietnamien Hanoi Cà Phê : </a><img src="assets/imageAlentour/Hanoi Cà Phê.jpg"></li><br>
+                  <li><a>Noura Street Food La Défense : </a><img src="assets/imageAlentour/NouraStreetFood.jpg"></li><br>
+                  <li><a>L'Atelier Artisan Crêpier : </a><img src="assets/imageAlentour/atelierartisancrepier.jpg"></li><br>
+                  <li><a>Restaurant Coréen K10 : </a><img src="assets/imageAlentour/k10.jpg"></li><br>
+                  <li>............................................</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="pointerCursor" (click)="panelExpanded3 = !panelExpanded3; panelExpanded = false; panelExpanded2 = false">
+              <h3 class="card-header">
+                  Magasins
+              </h3>
+            
+                <div class="card-body" *ngIf="panelExpanded3">
+                  <h4>Bienvenue dans un shopping sans fin-Welcome in an endless shopping place : </h4><br>
+                  <ul>
+                  <li><a>ANDRÉ souliers de mode depuis 1896 : </a><img src="assets/imageAlentour/logo-andre-comedie.jpg"></li><br>
+                  <li><a>American Vintage : </a><img src="assets/imageAlentour/logo AMV.jpg"></li><br>
+                  <li><a>Claudie Pierlot : </a><img src="assets/imageAlentour/claudiepierlot.jpg"></li><br>
+                   <li><a>Comptoir des cotonniers : </a><img src="assets/imageAlentour/comptoir-des-cotonniers.jpg"></li><br>
+                   <li><a>adidas : </a><img src="assets/imageAlentour/adidas.jpg"></li><br>
+                   <li><a>BRICE : </a><img src="assets/imageAlentour/brice.jpg"></li><br>
+                  <li><a>Courir : </a><img src="assets/imageAlentour/courir.jpg"></li><br>
+                  <li><a>DIM La défense : </a><img src="assets/imageAlentour/Logo_Dim.jpg"></li><br>
+                  <li><a>Kusmi Tea : </a><img src="assets/imageAlentour/logo-kusmi-tea.jpg"></li><br>
+                  <li>............................................</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+

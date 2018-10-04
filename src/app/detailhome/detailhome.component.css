@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Image au dessus du Header*/
+.image {
+    text-align: center;
+}
+
+/* Header/ Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: orange;
+}
+
+/* Créez deux colonnes inégales côte à côte */
+/* Colonne de gauche */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Colonne de Droite */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fausse image */
+.fakeimg {
+    background-color: #00FF00;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Ajouter un effet de carte pour les articles */
+.card {
+     background-color: #80D0D0;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Effacer floats après les colonnes */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Configuration réactive: lorsque l'écran mesure moins de 800 pixels de large, placez les deux colonnes les unes sur les autres plutôt que côte à côte */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
